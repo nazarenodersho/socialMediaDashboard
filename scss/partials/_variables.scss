@@ -1,0 +1,34 @@
+// Colors:
+
+// Light theme toggle:
+$toggle-light: rgb(174, 179, 203);
+
+// Light theme colors:
+$white-bg: rgb(255, 255, 255); // Background.
+$very-pale-blue: rgb(245, 247, 255); // Top background pattern.
+$light-grayish-blue: rgb(240, 242, 250); // Card background.
+$dark-grayish-blue: rgb(99, 104, 126); // Text.
+$very-dark-blue: rgb(30, 32, 42); // Text.
+
+// Dark theme toggle:
+$toggle-dark: linear-gradient(to right, #378FE6, #3DD981);
+
+// Dark theme colors:
+$very-dark-blue-bg: rgb(30, 32, 42); // Background.
+$very-dark-blue-pattern: rgb(31, 33, 46); // Top background pattern.
+$dark-desaturated-blue: rgb(37, 42, 65); // Card background.
+$desaturated-blue: rgb(139, 151, 198); // Text.
+$white-text: rgb(255, 255, 255); // Text.
+
+// Primary colors:
+$lime-green: rgb(29, 180, 137);
+$bright-red: rgb(220, 65, 76);
+
+// Social media colors:
+$facebook: rgb(26, 142, 245);
+$twitter: rgb(28, 160, 242);
+$instagram: linear-gradient(to right, #fdc468, #df4996);
+$youTube: rgb(196, 3, 42);
+
+// Attributions:
+$attribution: rgb(10, 138, 218);

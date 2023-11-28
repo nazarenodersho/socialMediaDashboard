@@ -1,0 +1,23 @@
+header {
+    .toggle-container {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+}
+
+main {
+    #socialMedia {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    #overview {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}

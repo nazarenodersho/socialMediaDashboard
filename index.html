@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- link font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- link css -->
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <title> Social Media Dashboard</title>
+
+</head>
+<body class="light-theme">
+  <header>
+    <h1>Social Media Dashboard</h1>
+    <h2 id="totalFollowers"></h2>
+    <hr>
+    <div class="toggle-container">
+      <p>Dark Mode</p>
+      <input type="checkbox" id="switch" class="toggle-switch">
+      <label for="switch"></label>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Main social media cards -->
+    <section id="socialMedia">
+
+      <div id="card-facebook">
+
+        <div class="my-user">
+          <img src="./images/icon-facebook.svg" alt="">
+          <h3>@dershoDev</h3>
+        </div>
+
+        <p class="follows-number" id="stats-1"></p>
+        <p class="follows-text">FOLLOWERS</p>
+
+        <div class="stadistics">
+        </div>
+
+      </div>
+
+      <div id="card-twitter">
+
+        <div class="my-user">
+          <img src="./images/icon-twitter.svg" alt="">
+          <h3>@dershoDev</h3>
+        </div>
+
+        <p class="follows-number" id="stats-2"></p>
+        <p class="follows-text">FOLLOWERS</p>
+
+        <div class="stadistics">
+        </div>
+        
+      </div>
+
+      <div id="card-instagram">
+        <!-- linear-gradient in the border-top -->
+        <div id="gradient"></div>
+
+        <div class="my-user">
+          <img src="./images/icon-instagram.svg" alt="">
+          <h3>@dersho_dev</h3>
+        </div>
+
+        <p class="follows-number" id="stats-3"></p>
+        <p class="follows-text">FOLLOWERS</p>
+
+        <div class="stadistics">
+        </div>
+        
+      </div>
+
+      <div id="card-youtube">
+
+        <div class="my-user">
+          <img src="./images/icon-youtube.svg" alt="">
+          <h3>DershoDev</h3>
+        </div>
+
+        <p class="follows-number" id="stats-4"></p>
+        <p class="follows-text">SUBSCRIBERS</p>
+
+        <div class="stadistics">
+        </div>
+        
+      </div>
+
+    </section>
+
+    <div id="overviewTitle">
+        <h2>Overview - Today</h2>
+    </div>
+
+    <section id="overview">
+      
+      <!-- Overview Cards -->
+
+      <!-- Facebook -->
+      <div class="info">
+        <div class="data">
+          <p>Page views</p>
+          <span id="stats-5"></span>
+        </div>
+
+        <div class="icons">
+          <img src="./images/icon-facebook.svg" alt="">
+
+          <div class="stadistics">
+          </div>
+        </div>
+      </div>
+
+      <!-- Facebook -->
+      <div class="info">
+        <div class="data">
+          <p>Likes</p>
+          <span id="stats-6"></span>
+        </div>
+
+        <div class="icons">
+          <img src="./images/icon-facebook.svg" alt="">
+
+          <div class="stadistics">
+          </div>
+        </div>
+      </div>
+
+      <!-- Instagram -->
+      <div class="info">
+        <div class="data">
+          <p>Likes</p>
+          <span id="stats-7"></span>
+        </div>
+
+        <div class="icons">
+          <img src="./images/icon-instagram.svg" alt="">
+
+          <div class="stadistics">
+          </div>
+        </div>
+      </div>
+
+      <!-- Instagram -->
+      <div class="info">
+        <div class="data">
+          <p>Profile Views</p>
+          <span id="stats-8"></span>
+        </div>
+
+        <div class="icons">
+          <img src="./images/icon-instagram.svg" alt="">
+
+          <div class="stadistics">
+          </div>
+        </div>
+      </div>
+
+      <!-- Twitter -->
+      <div class="info">
+        <div class="data">
+          <p>Retweets</p>
+          <span id="stats-9"></span>
+        </div>
+
+        <div class="icons">
+          <img src="./images/icon-twitter.svg" alt="">
+
+          <div class="stadistics">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Twitter -->
+      <div class="info">
+        <div class="data">
+          <p>Likes</p>
+          <span id="stats-10"></span>
+        </div>
+
+        <div class="icons">
+          <img src="./images/icon-twitter.svg" alt="">
+
+          <div class="stadistics">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Youtube -->
+      <div class="info">
+        <div class="data">
+          <p>Likes</p>
+          <span id="stats-11"></span>
+        </div>
+
+        <div class="icons">
+          <img src="./images/icon-youtube.svg" alt="">
+
+          <div class="stadistics">
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- Youtube -->
+      <div class="info">
+        <div class="data">
+          <p>Total Views</p>
+          <span id="stats-12"></span>
+        </div>
+
+        <div class="icons">
+          <img src="./images/icon-youtube.svg" alt="">
+
+          <div class="stadistics">
+          </div>
+
+        </div>
+      </div>
+      
+    </section>
+    
+  </main>
+  
+  <footer>
+    <div class="attribution">
+      <p>Challenge by: <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>
+      <p>Coded by: <a href="#">Nazareno Dershohannetyan</a></p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Script -->
+  <script src="./js/toggle.js"></script>
+  <script src="./js/stats.js"></script>
+</body>
+</html>

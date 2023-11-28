@@ -1,0 +1,145 @@
+header {
+    padding: 30px 20px 30px 20px;
+    border-radius: 0px 0px 15px 15px;
+    height: 25vh;
+    h1 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 3px;
+    }
+    #totalFollowers {
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    hr { 
+        height: 2px;
+        margin: 20px 0px 20px 0px;
+    }
+    .toggle-container {
+        display: flex;
+        justify-content: space-between;
+        p {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: $dark-grayish-blue;
+        }
+        .toggle-switch{
+            display: none;
+        }
+        label {
+            background-color: $dark-grayish-blue;
+            border-radius: 20px;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            cursor: pointer;
+            position: relative;
+            transition: background 0.3s;
+        }
+        .toggle-switch:checked + label {
+            background: $toggle-dark;
+        }
+        label:before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color: $light-grayish-blue;
+            border-radius: 50%;
+            left: 4px;
+            top: 2px;
+            transition: transform 0.3s;
+        }
+        .toggle-switch:checked + label:before {
+            transform: translateX(16px);
+        }
+    }
+}
+
+main {
+    margin-top: -8vh;
+    #socialMedia {
+        // General structure for main social media cards:
+        #card-facebook, #card-twitter, #card-instagram, #card-youtube {
+            @include card;          
+            .my-user {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                margin-bottom: 20px;
+                h3 {
+                    font-size: 0.7rem;
+                    font-weight: 700;
+                }
+            }
+            .follows-number {
+                font-size: 3rem;
+                font-weight: 700;
+            }
+            .follows-text {
+                font-size: 0.7rem;
+                font-weight: 400;
+                letter-spacing: 5px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    #overviewTitle {
+        h2 {
+            padding: 20px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+    }
+
+    #overview {
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 20px 10px 20px;
+            padding: 20px;
+            border-radius: 5px;
+            .data {
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                p {
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                }
+                span {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+            }
+            .icons {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                row-gap: 30px;
+            }
+        }
+    }
+
+}
+
+footer {
+    padding: 20px;
+    .attribution {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center;
+        p {
+            font-weight: 700;
+            font-size: 0.8rem;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
+
+## Overview
+
+### The challenge
+
+You should be able to:
+
+- View the optimal layout for the site depending on their device's screen size (mobile, tablet or desktop).
+- See hover states for all interactive elements on the page.
+- Toggle color theme to their preference.
+
+### Links
+
+- Solution URL: (https://www.frontendmentor.io/solutions/social-media-dashboard-built-with-scss-and-javascript-sF3JlQ-MjM)
+- Live Site URL: (https://stadistics-dashboard.netlify.app/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- SCSS
+- Flexbox
+- Grid
+- Javascript
+- Mobile-first workflow
+
+### What I learned
+
+```js
+    // Showing the random stadistics in the HTML
+    const stadisticsElements = document.querySelectorAll('.stadistics');
+
+    stadistics.forEach((num, index) => {
+
+        let content = stadisticsElements[index];
+        content.textContent = `${num}%`;
+
+        if (num < 0) {
+            content.classList.add('red-text');
+            let negativeIcon = document.createElement('img');
+            negativeIcon.src = '../images/icon-down.svg';
+            content.insertBefore(negativeIcon, content.firstChild);
+        } else {
+            content.classList.add('green-text');
+            let positiveIcon = document.createElement('img');
+            positiveIcon.src = '../images/icon-up.svg';
+            content.insertBefore(positiveIcon, content.firstChild);
+        }
+    });
+```
+
+### Continued development
+
+I would like to further improve my skills in JavaScript. It was challenging for me (but not impossible) to build and understand the code I created to generate the "simulation" of social media numbers (followers, likes, statistics). Additionally, it would be beneficial to learn more about CSS and SCSS to create more professional and modern styles.
+
+## Author
+
+- LinkedIn - (www.linkedin.com/in/nazareno-dershohannetyan-74a653248)
+- Github - (https://github.com/nazarenodersho)
+- Frontend Mentor - (https://www.frontendmentor.io/profile/nazarenodersho)
